@@ -7,7 +7,6 @@ function uzpildytiForma() {
     const forma = document.getElementById("forma");
     const pridetiUzduoti = document.getElementById("uzduotiesMygtukas");
     const lentele = document.getElementById("uzLentele");
-    const rodytiForma = document.getElementById("formosMygtukas");
     if (forma.style.display === "none" && pridetiUzduoti.style.display === "none" && lentele.style.display === "none") {
         forma.style.display = "block";
         pridetiUzduoti.style.display = "block";
@@ -22,6 +21,7 @@ function uzpildytiForma() {
         document.getElementById("formosMygtukas").style.backgroundColor = "green";
     }
 }
+
 
 //Naujos uzduoties pridejimas po mygtuko paspaudimo
 
