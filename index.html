@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=content-width initial-scale=1 maximum-scale=1, user-scalable=no">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="row justify-content-center mt-2">
+    <h2>UŽDUOČIŲ SĄRAŠAS</h2>
+    </div>
+
+<!--    Mygtukas-->
+    <div class="row mt-3 justify-content-center">
+        <input type="button" class="btn btn-success" id="formosMygtukas" value="Užpildyti formą">
+    </div>
+
+<!--    Forma-->
+    <div class="row mt-3" id="forma">
+        <div class="col-md-12">
+        <form>
+            <div class="form-group">
+                <label for="temosLaukas">Įveskite ką ruošiatės atlikti:</label>
+                <input type="text" class="form-control" id="temosLaukas">
+            </div>
+            <div class="form-group">
+                <label for="pirmumas">Pirmumas:</label>
+                <select class="form-control" id="pirmumas">
+                    <option></option>
+                    <option>Nėra</option>
+                    <option>Žemas</option>
+                    <option>Normalus</option>
+                    <option>Aukštas</option>
+                </select>
+            </div>
+            <div class="form-group">
+            <label for="terminas">Terminas:</label>
+            <input type="date" class="form-control" id="terminas">
+        </div>
+            <div class="form-group">
+                <label for="progresas">Kiek % įvykdyta?</label>
+                <select class="form-control" id="progresas">
+                    <option></option>
+                    <option>0%</option>
+                    <option>25%</option>
+                    <option>50%</option>
+                    <option>75%</option>
+                    <option>100%</option>
+                </select>
+            </div>
+        </form>
+        </div>
+    </div>
+
+<!--    Kitas mygtukas -->
+    <div class="row mt-3 justify-content-center">
+    <button type="button" class="btn btn-warning" id="uzduotiesMygtukas" value="Pridėti užduotį" onclick="isvalytiForma">Pridėti užduotį</button>
+    </div>
+
+
+<!--Lentele-->
+    <div class="row mt-3" id="uzLentele">
+        <table class="table" id="lentele">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">Atlikta</th>
+                <th scope="col">Užduotis</th>
+                <th scope="col">Pirmenybė</th>
+                <th scope="col">Terminas</th>
+                <th scope="col">Baigtumo procentas</th>
+                <th scope="col">Pridėta</th>
+                <th scope="col">Šalinti</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+
+</div>
+
+<footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="javascript.js"></script>
+</footer>
+</body>
+</html>

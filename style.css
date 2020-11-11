@@ -1,0 +1,17 @@
+#mygtukas {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+#spalva {
+    background-color: green;
+}
+#forma {
+    display: none;
+}
+#uzduotiesMygtukas {
+    display: none;
+}
+#uzLentele {
+    display: none;
+}
